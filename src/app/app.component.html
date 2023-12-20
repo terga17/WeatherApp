@@ -6,8 +6,8 @@
 
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
-    <img src="../assets/images/day.jpg" *ngIf="kelvinToC(weatherData.main.temp)  > 20">
-    <img src="../assets/images/night.jpg" *ngIf="kelvinToC(weatherData.main.temp) <= 20">
+    <img src="./assets/images/day.jpg" *ngIf="kelvinToC(weatherData.main.temp)  > 20">
+    <img src="./assets/images/night.jpg" *ngIf="kelvinToC(weatherData.main.temp) <= 20">
 
     <div class="weather-data">
       <div class="location"> {{weatherData.name}} </div>
@@ -22,7 +22,7 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="label">
-          <img src="../assets/images/cold.png">
+          <img src="./assets/images/cold.png">
           <span>min</span>
         </div>
         <div class="value">
@@ -32,7 +32,7 @@
 
       <div class="info-block">
         <div class="label">
-          <img src="../assets/images/hot.png">
+          <img src="./assets/images/hot.png">
           <span>max</span>
         </div>
         <div class="value">
@@ -42,7 +42,7 @@
 
       <div class="info-block">
         <div class="label">
-          <img src="../assets/images/humidity.png">
+          <img src="./assets/images/humidity.png">
           <span>humidity</span>
         </div>
         <div class="value">
@@ -52,7 +52,7 @@
 
       <div class="info-block">
         <div class="label">
-          <img src="../assets/images/wind.png">
+          <img src="./assets/images/wind.png">
           <span>wind</span>
         </div>
         <div class="value">
